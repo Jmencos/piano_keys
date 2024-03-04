@@ -20,13 +20,14 @@ keys.forEach(function (key) {
   notes.push(document.getElementById(key));
 });
 
-// named functions that change the color of the keys 
+// named function that change the color of the keys 
 function keyPlay({ target }) {
-  if (target.className ==='black-key') {
-    target.style.backgroundColor = "purple"
-  } else {
-  target.style.backgroundColor = "red";
-  }
+  // if (target.className ==='black-key') {
+  //   target.style.backgroundColor = "purple"
+  // } else {
+  // target.style.backgroundColor = "red";
+  // }
+  target.className === 'black-key' ? target.style.backgroundColor = 'purple' : target.style.backgroundColor = "red" ;
 }
 
 function keyReturn({ target }) {
